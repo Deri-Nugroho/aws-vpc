@@ -20,7 +20,7 @@
 2.  **Membuat Subnetting**:
       * Klik **Subnets** \> **Create subnet** \> Pilih `CK-VPC`.
       * **CK-Public-Subnet-1**: AZ `us-east-1a`, CIDR `172.16.1.0/24`.
-      * **CK-Private-Subnet-1**: AZ `us-east-1b`, CIDR `172.16.3.0/24`.
+      * **CK-Private-Subnet-1**: AZ `us-east-1a`, CIDR `172.16.3.0/24`.
 3.  **Membuat Gateways**:
       * **CK-IGateway**: Create Internet Gateway \> Attach ke `CK-VPC`.
       * **CK-NAT-Gateway**:
@@ -80,7 +80,7 @@ Tambahkan 2 subnet baru dengan ketentuan CIDR dan AZ yang spesifik agar tidak be
 
 | Subnet Name | CIDR Block | Availability Zone | Route Table Target |
 | :--- | :--- | :--- | :--- |
-| **CK-Public-Subnet-2** | `172.16.2.0/24` | `us-east-1a` | **CK-RTB-Public** |
+| **CK-Public-Subnet-2** | `172.16.2.0/24` | `us-east-1b` | **CK-RTB-Public** |
 | **CK-Private-Subnet-2** | `172.16.4.0/24` | `us-east-1b` | **CK-RTB-Private** |
 
 ### **Kriteria Keberhasilan:**
